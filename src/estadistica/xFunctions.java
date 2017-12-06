@@ -29,5 +29,31 @@ public class xFunctions
         return sum/arr.length;
     }
     
+    public static double covariance(double[] arrX,double[] arrY)
+    {
+        double sumX = sumArray(arrX);
+        double sumY = sumArray(arrY);
+        double sumXY = 0.0;
+        double averageX = sumX/arrX.length;
+        double averageY = sumY/arrY.length;
+        
+        for(int i=0;i<arrX.length;i++)
+        {
+            sumXY = arrX[i]*arrY[i];
+        }
+        
+        return (sumXY/arrX.length)-(averageX*averageY);  
+    }
+    
+    
+    public static double sumArray(double[] arr)
+    {
+        double s = 0.0;
+        for(int i=0;i<arr.length;i++)
+        {
+            s+=arr[i];
+        }
+        return s;
+    }
     
 }
