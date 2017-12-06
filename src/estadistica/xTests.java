@@ -7,7 +7,7 @@ package estadistica;
 
 /**
  *
- * @author Phantom
+ * @author Luis Espanna
  */
 public class xTests
 {
